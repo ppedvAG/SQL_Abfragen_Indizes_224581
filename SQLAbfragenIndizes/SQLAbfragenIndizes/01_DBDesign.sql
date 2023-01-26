@@ -1,5 +1,90 @@
 /*
 
+Tu nie:
+DB erstellen  mit einfachen create database
+			oder per SSMS einfacher Klick
+
+			Tabellen erstellen und dort  ID gedankenlos mit PK setzen
+
+			Datentypen müssen gut überlegt
+
+
+	 PK  ---> Beziehung FK
+
+	 Aufgabe des PK... Beziehung
+	 Muss aber eindeutig sein  1:N
+
+
+	 Beziehung
+	 Aufgabe PK FK zu KOntrollieren 1:N
+	 Ersatzalternativ: Trigger 	 schlechteste Idee
+
+
+	 Normalisierung  Normalform	  Gegenteil von Redundanz
+
+
+	 1NF: atomar pro Zelle ein Wert  (datum eigtl nicht atomar)
+
+
+	 like '%siemens.de'	 PräfixEmail  Emaildom
+
+
+
+	 2NF: PK (eine Spalte oder auch mehr Spalten)
+
+	 3 NF: beidseitig korrelierende Spalten wäre verboten
+	 --braucht mehr joins
+
+	 Redundanz ist schnell
+
+
+	 Datentypen:
+
+	 Vorname: 'otto'
+
+	 varchar(50)   ... Otto		4 
+	 char(50)  ...'Otto    '    50
+	 nchar(50)	'Otto  '		50 * 100
+	 nvarchar(50) 'otto'		4 *2
+	 text()						depricated seit 2005 (image)
+
+
+	 immer Unicode obwohl unnötig
+
+	 Datetime aber date hätte gereicht
+
+
+Wieviele Bestelllungen gibts aus dem Jahr 1997 Orderdate?
+ */
+select * from orders where orderdate like '%1997%'	  --408	  langsam
+select * from orders where year(orderdate) = 1997	  --408	  langsam
+select * from orders where orderdate 
+		between '1.1.1997' and '31.12.1997 23:59:59.999'	--411??
+		--falsch aber schnell
+select * from orders where 
+
+datetime (ms) ist aber nur auf 2 bis 3 ms genau
+datetime2 ns
+
+durch logisches Design können physikalisch Fehler entstehen
+
+
+create table t11 (id int identity, spx char(4100), spy char(4100))
+-_Error wg8060
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 logisches Design vs physikalisches Design
 
 
