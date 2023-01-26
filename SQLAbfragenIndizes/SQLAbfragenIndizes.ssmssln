@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQLAbfragenIndizes", "SQLAbfragenIndizes\SQLAbfragenIndizes.ssmssqlproj", "{83A7059A-EC75-4488-B251-50DAE253AA3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A7059A-EC75-4488-B251-50DAE253AA3B}.Default|Default.ActiveCfg = Default
+		{EE6B4BD0-D443-4DE8-A9D4-3EBAED43CCEE}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FFF68B6-9BCE-4AC1-BA95-F09F278AFD36}
+	EndGlobalSection
+EndGlobal
