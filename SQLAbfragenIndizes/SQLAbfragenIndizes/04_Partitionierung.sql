@@ -7,7 +7,7 @@ Abfrage .. Ergebnis 10 Zeilen
 TABA  10000
 
 
-TABB 100000
+TABB 1000000
 
 
 
@@ -94,7 +94,7 @@ create table tab (id int) ON SCHEMA(Spalte5)
 create partition scheme schname
 as
 partition fzahl()  to (Dg1, DG2, DG3)
----                               1      2      3
+---                    1      2      3
 
 
 
@@ -150,10 +150,10 @@ commit
 
 
 set statistics io, time on
-select * from ptab where nummer = 1170 --100 Seiten
+select * from ptab where nummer = 117 --100 Seiten
 
 
-select * from ptab where id = 117
+select * from ptab where id = 117 --alle Seiten
 
 
 select * from ptab where nummer = 1117 --19800
@@ -224,16 +224,23 @@ GO
 --es gibt keinen... ausser bei der Partionierung
 
 
-create table archiv(id int not null --kein identity
+create table archiv1(  id int not null --kein identity
 					, nummer int
-					, spx char(4100)) on bis200
+					, spx char(4100)) on bis100
 
 
-alter table ptab switch partition 1 to archiv --das war alles
+
+
+
+alter table ptab2 switch partition 1 to archiv1 --das war alles
+
+--100MB/Sek--- 100000000000000000000000000000MB	  -ca  ein paar ms
 
 select * from archiv
 
 select * from ptab where id = 10
+
+
 
 
 
@@ -249,10 +256,23 @@ CREATE PARTITION FUNCTION [fZahl](int) AS
 RANGE LEFT FOR VALUES (200, 5000)
 GO
 
+CREATE PARTITION SCHEME [schZahl] AS PARTITION
+[fZahl] ALL TO ([PRIMARY])
+GO
+
+--
+--Jahresweise
+ CREATE PARTITION FUNCTION [fZahl](datetime) AS 
+RANGE LEFT FOR VALUES ('31.12.2020 23:59:59.997', )
+GO
+------------2020----------2021--------------2022----
 
 
+--a bis M     n bis R    s bis Z
+ CREATE PARTITION FUNCTION [fZahl](varchar(50) AS 
+RANGE LEFT FOR VALUES ('n','' )
 
-
+---------------m]-----------------r----------
 
 
 
