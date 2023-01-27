@@ -43,23 +43,35 @@
           <AssociatedConnUserName />
           <FullPath>03_Sichten.sql</FullPath>
         </FileNode>
+        <FileNode Name="04_MAXDOP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>04_MAXDOP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="04_Partitionierung.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>04_Partitionierung.sql</FullPath>
+        </FileNode>
         <FileNode Name="06_Funktion.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>06_Funktion.sql</FullPath>
         </FileNode>
-        <FileNode Name="08_Partitionierung.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>08_Partitionierung.sql</FullPath>
-        </FileNode>
         <FileNode Name="08_UNION.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>08_UNION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10_Indizes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10_Indizes.sql</FullPath>
         </FileNode>
         <FileNode Name="12_Logischer Fluss.sql">
           <AssociatedConnectionMoniker />
@@ -72,6 +84,12 @@
           <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Einsatz von TX.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Index sehen.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Index sehen.sql</FullPath>
         </FileNode>
         <FileNode Name="X__Locks finden.sql">
           <AssociatedConnectionMoniker />
@@ -90,6 +108,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>X_SQL Server 2019 Diagnostic Information Queries.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Z_Spieltabelle.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Z_Spieltabelle.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

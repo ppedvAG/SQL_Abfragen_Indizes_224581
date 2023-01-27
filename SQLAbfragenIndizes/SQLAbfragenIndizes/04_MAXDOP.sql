@@ -69,9 +69,9 @@ where --    > wert2     5000 Seiten      4,9
 --zuerst auf dem Server Grundeinstellung (Setup)
 
 
---Im Plan:. repartion Stream und Gather Stream
---anzahl der Kerne max 8 
---kostenschwell 5  auf 25
+--Im Plan:. repartion Stream und Gather Stream INdiz für zuviele CPUs
+--anzahl der Kerne: max 8 
+--kostenschwellwert 5  auf 25  bei OLAP (Datawarehouse) und auf 50 bei OLTP (Shop)
 
 
 --Seit SQL 2016 SCOPED DATABASE
